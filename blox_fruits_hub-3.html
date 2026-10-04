@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Blox Fruits Hub</title>
+<style>
+:root{--bg:#101827;--panel:#1d3552;--panel2:#24354b;--gold:#f5b942;--text:#f4f7fb;--muted:#c5d2e2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:#0b1220;position:sticky;top:0;z-index:5}
+.brand{font-weight:900}.brand span{color:var(--gold)}nav{display:flex;gap:12px}nav a{color:var(--muted);text-decoration:none;font-size:13px}
+main{max-width:1050px;margin:auto;padding:22px 5%}.hero{background:linear-gradient(130deg,#1d3552,#285b78);border-radius:20px;padding:28px 22px}
+.tag{display:inline-block;background:#245d4d;color:#bff3d7;padding:7px 10px;border-radius:20px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(30px,7vw,54px);line-height:1.05;margin:18px 0 12px}.hero p{color:#d4e2f5;line-height:1.6;max-width:600px}
+.btn{display:inline-block;background:var(--gold);color:#172033;text-decoration:none;font-weight:bold;padding:12px 17px;border-radius:10px;margin-top:8px;border:0;cursor:pointer}
+h2{margin:28px 0 14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.tile{background:var(--panel2);border:1px solid #344b65;border-radius:14px;padding:17px;text-decoration:none;color:var(--text);font-weight:bold;min-height:100px;cursor:pointer;text-align:left}
+.tile b{display:block;font-size:27px;margin-bottom:8px}.tile small{display:block;color:var(--muted);font-weight:normal;line-height:1.4}
+.panel{display:none;background:#18283c;border:1px solid #344b65;border-radius:15px;padding:18px;margin-top:15px;line-height:1.6}.panel.active{display:block}
+.panel h3{margin:0 0 10px;color:var(--gold)}.panel ul{padding-left:20px}.panel li{margin:7px 0}.pill{display:inline-block;background:#304760;color:#e3edf8;border-radius:20px;padding:4px 9px;font-size:12px;margin:3px}
+.note{color:var(--muted);line-height:1.6;background:#18283c;border-radius:12px;padding:16px}footer{text-align:center;color:#9fb0c4;padding:28px 12px;font-size:13px}
+button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:48px}.tile{padding:22px}}
+</style>
+</head>
+<body>
+<header><div class="brand">🍎 BLOX <span>FRUITS HUB</span></div><nav><a href="#guides">Guides</a><a href="#about">About</a></nav></header>
+<main>
+<section class="hero">
+<span class="tag">WELCOME, GAMER</span>
+<h1>The Ultimate<br>Blox Fruits Guide</h1>
+<p>Explore beginner-friendly information about fruits, swords, races, fighting styles and game codes.</p>
+<a class="btn" href="#guides">Explore guides ↓</a>
+</section>
+<section id="guides">
+<h2>Choose a guide</h2>
+<p style="color:var(--muted)">Tap a category to open its guide.</p>
+<div class="grid">
+<button class="tile" onclick="show('fruits')"><b>🍎</b>Fruits<small>Types, choosing a fruit and grinding tips</small></button>
+<button class="tile" onclick="show('swords')"><b>⚔️</b>Swords<small>Sword basics and how to plan your collection</small></button>
+<button class="tile" onclick="show('races')"><b>🦈</b>Races<small>Race abilities and upgrade overview</small></button>
+<button class="tile" onclick="show('styles')"><b>🥋</b>Fighting styles<small>What they are and how to progress</small></button>
+<button class="tile" onclick="show('codes')"><b>🎁</b>Codes<small>How to redeem game codes safely</small></button>
+<button class="tile" onclick="show('grinding')"><b>⭐</b>Grinding<small>Simple tips for leveling efficiently</small></button>
+</div>
+<div id="fruits" class="panel"><h3>🍎 Fruits</h3><p>Fruits give your character special abilities. Different fruits suit different play styles.</p><ul><li><b>Grinding:</b> Look for moves that hit several enemies and are easy for you to aim.</li><li><b>PvP:</b> Consider combos, mobility and how comfortable you are using the moves.</li><li><b>Tip:</b> Try a fruit's moves and mastery requirements before spending resources on it.</li></ul><span class="pill">Elemental</span><span class="pill">Beast</span><span class="pill">Natural</span></div>
+<div id="swords" class="panel"><h3>⚔️ Swords</h3><p>Swords are a weapon choice for players who want to deal damage with sword moves and basic attacks.</p><ul><li>Check the sword's NPC, island or puzzle requirement before traveling.</li><li>Save the required money and materials before attempting to unlock it.</li><li>Choose a sword that matches your stats and preferred fighting style.</li></ul><p><b>Collection tip:</b> Keep track of swords you own and the ones you still want.</p></div>
+<div id="races" class="panel"><h3>🦈 Races</h3><p>Each race has its own traits and abilities. Race upgrades can improve what your character can do.</p><ul><li>Talk to the relevant race-related NPCs to learn available upgrades.</li><li>Some upgrades require quests, materials or other conditions.</li><li>Pick a race based on how you play rather than only its appearance.</li></ul><p><b>Remember:</b> Requirements can change after game updates.</p></div>
+<div id="styles" class="panel"><h3>🥋 Fighting styles</h3><p>Fighting styles give you melee moves and are important for building your character.</p><ul><li>Visit the style teacher and check the price and requirements.</li><li>Practice the moves and raise mastery to unlock more abilities.</li><li>Keep your stats and play style in mind when choosing a main style.</li></ul></div>
+<div id="codes" class="panel"><h3>🎁 Codes</h3><p>Codes may give rewards such as experience boosts, stat refunds or in-game titles. They can expire.</p><ul><li>Open the in-game code/redeem menu.</li><li>Enter a code exactly as written, then submit it.</li><li>Use codes only from trustworthy game announcements or verified sources.</li></ul><p><b>Live code list:</b> This demo does not automatically check which codes are active. Confirm a code in-game before sharing it.</p></div>
+<div id="grinding" class="panel"><h3>⭐ Grinding tips</h3><ul><li>Follow quests close to your current level.</li><li>Group enemies together when your moves can hit multiple targets.</li><li>Use the abilities you can control reliably.</li><li>Spend stat points on the build you actually use.</li><li>Take breaks and enjoy exploring between quests.</li></ul></div>
+</section>
+<section id="about"><h2>About this hub</h2><p class="note">This is a fan-made guide website and is not affiliated with Roblox or the Blox Fruits developers. Game details can change after updates. The guides here are starter information, not a live game database.</p></section>
+</main>
+<footer>© 2026 Blox Fruits Hub · Fan-made website</footer>
+<script>
+function show(id){
+ document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+ const panel=document.getElementById(id);
+ if(panel){panel.classList.add('active');panel.scrollIntoView({behavior:'smooth',block:'nearest'});}
+}
+</script>
+</body>
+</html>
